@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+    box-shadow: 6px 7px 7px #000;
+    background: linear-gradient(201deg, rgba(0,0,0,1) 0%, rgb(235, 238, 210) 96%, rgba(142,142,142,1) 100%);
+    color: #000;
+    border-radius: 20px 5px 20px 5px;
+    text-align: center;
+}
+.card-title{  
+    border-bottom: 1px solid rgb(226, 20, 226);
+}
+
+.card-text{
+    border-bottom: 1px solid blue;
+
+}
+#pagina{
+    margin: 32px 0;
+    padding: 5px;
+    font-size: 18px;
+    background-color: black;
+    color: #fff;
+}
+body{
+    background-color: #ddd;
+}
+
+.btns{
+    text-align: center;
+}
+.a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    row-gap: 50px;
+}
+
+i{
+    background-color: #ddd;
+    padding: 9px;
+    border: 1px solid #000;
+    border-radius: 3px 0 0 3px;
+}
+header{
+    background-color: rgb(219, 241, 18);
+    padding: 8px;
+    margin-bottom: 25px;
+}   
+.inpu{
+    justify-content: end;
+    align-items: center;
+    display: flex;
+}
+.navis{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    mix-blend-mode: multiply;
+    object-fit: contain;
+    width: 150px;
+}
+#inpus{
+    border: none;
+    color: #000;
+    background-color: #ddd;
+    border: 1px solid #000;
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    padding: 5px;
+
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .container{
+        max-width:300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+
+    }
+    #pagina{
+        margin: 23px 0;
+        padding: 3px;
+        font-size: 18px;
+        background-color: black;
+        color: #fff;
+    }
+
+    .navis{
+        max-width: 300px;
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+    }
+    .navis img{
+        width: 160px;
+    }
+    #inpus{
+        width: 300px;
+        padding: 10px;
+        border: 2px solid #000;
+        border-left: none;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+    i{
+        background-color: #ddd;
+        padding: 13px;
+        border: 2px solid #000;
+        border-radius: 5px 0 0 5px;
+        margin-top: 25px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    body{
+        overflow-x: hidden;
+    }
+    .container{
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        padding: 25px;
+    }
+    i{
+        background-color: #ddd;
+        padding: 25px;
+        border: 2px solid #000;
+        border-radius: 5px 0 0 5px;
+        margin-top: 25px;
+    }
+    .navis{
+        max-width: 600px;
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+    }
+    .navis img{
+        width: 260px;
+    }
+    #inpus{
+        width: 500px;
+        padding: 15px;
+        border: 2px solid #000;
+        border-left: none;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .a{
+        font-size: 24px;
+    }
+    .card h5{
+        font-size: 32px;
+    }
+    .card span{
+        font-size: 24px;
+    }
+    .grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 80px;
+        row-gap: 30px;
+    }
+    .card{
+        width: 630px;
+    }
+
+}
